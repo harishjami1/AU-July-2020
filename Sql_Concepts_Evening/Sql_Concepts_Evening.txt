@@ -1,0 +1,4 @@
+Note:
+Presently i am unable to run a server as my laptop is not working.So, I cannot share the results.
+2.SELECT Doctor,Dept,Patient from Doctor_Table group by Dept,Doctor;
+3.SELECT D_Date,count(Patients) WHERE D_Date>= (dd/mm/yyyy:13/07/2020) AND D_Date<= (dd/mm/yyyy:19/07/2020) group by D_date;
