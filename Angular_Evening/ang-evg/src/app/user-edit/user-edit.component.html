@@ -1,0 +1,33 @@
+<!-- <p>user-edit works!</p> -->
+<h3>Employee ID and First name must be entered</h3>
+<div>
+    <form [formGroup]="editform" (ngSubmit)="onSubmit()">
+        <label>
+            Employee id:Enter the 3-digit Employee ID
+           
+            <input type="text" formControlName="empId" [placeholder]="popservice.users[index].empId">
+          </label>
+          <label>
+              First Name:
+              
+              <input type="text" formControlName="firstName" [placeholder]="popservice.users[index].firstName">
+            </label>
+            <label>
+                Last Name:
+                <input type="text" formControlName="lastName" [placeholder]="popservice.users[index].lastName">
+            </label>
+            <label>
+                Age:
+                <input type="text" formControlName="age" [placeholder]="popservice.users[index].age">
+            </label>
+          <label>
+            State:
+            <input type="text" formControlName="State" [placeholder]="popservice.users[index].State" >
+          </label>
+          <div>Form status :{{editform.status}}</div>
+            <button type="submit" [disabled]="!editform.valid">Submit</button>
+          
+    </form>
+
+    <ng-content></ng-content>
+</div>

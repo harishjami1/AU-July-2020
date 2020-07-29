@@ -1,0 +1,32 @@
+<p>add-user works!</p>
+<h2>Enter the details of new user</h2>
+<h3>Employee ID and First name must be entered</h3>
+<div>
+    <form [formGroup]="addform" (ngSubmit)="onSubmit()">
+        <label>
+            Employee id: Enter the 3 digit Employee ID
+            <input type="text" formControlName="empId" >
+          </label>
+          <label>
+              First Name: 
+              <input type="text" formControlName="firstName">
+            </label>
+            <label>
+                Last Name:
+                <input type="text" formControlName="lastName">
+            </label>
+            <label>
+                Age:
+                <input type="text" formControlName="age">
+            </label>
+          <label>
+            State:
+            <input type="text" formControlName="State"  >
+          </label>
+          <div>Form status :{{addform.status}}</div>
+            <button type="submit" [disabled]="!addform.valid">Submit</button>
+          
+    </form>
+
+    <ng-content></ng-content>
+</div>
