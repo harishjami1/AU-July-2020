@@ -1,0 +1,64 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="">
+	<title>Javascript</title>
+</head>
+<body>
+<p>These two boxes has to be verified separately</p>
+<p>1.First enter the expression to check .it tests for expressions starting with hot/not/dot and ending with word starting  with h/n/d and 
+ending with  ' t '  with atlest one o in between.It doesn't match with expression ending with word ht,nt,dt.</p>
+<p>2.Then refresh the page and check for 2nd box.</p>
+<p>3.Enter without box brackets only numbers separted by commas</p>
+<div>
+<label for name ="regex" >Enter the regex to be checked :</label>
+<input type="text" id="regex" name="regex">
+<button type="button" onclick="testRegEx();">Check</button>
+</div>
+<div>
+<label for name="array"  >Enter the array               :</label>
+<input type="text" id="array" name ="array">
+<button type="button" onclick="printarray();testRegEx();">Submit</button>
+</div>
+
+    
+    <script>
+        function testRegEx()
+   { var s=document.getElementById("regex").value;
+   re = new RegExp(/[hdn]ot.*[hdn]o+t/)
+
+   if (re.test(s))
+      {
+      document.write("<p>A match is found!</p>");
+      }
+   else
+      {
+      document.write("<p>No Match</p>");
+      }
+   }
+   function printarray(){
+     var k=document.getElementById("array").value;
+	 var j=k.split(",");
+	 var h  = j.map(Number);
+	 var n=h.sort();
+	 var y=n.filter((m)=> m>10);
+	 var p=y;
+	 for (i in y)y[i]+=1;
+	 var g=y;
+	 var b=g.slice(1,5);	 
+	 document.write("Input array is :"+k+"\n sorted array is :"+n+"\n Greater than 10 elements:"+p +" \n Added 1 to each element:"+g+"\n  First three elements :"+b);
+   }
+
+    </script>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
