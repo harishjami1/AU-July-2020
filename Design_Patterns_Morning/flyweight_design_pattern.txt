@@ -1,0 +1,38 @@
+1.Intent :
+   Flyweight is of type strructural design pattern.It lets us fit more objects into  the available amount of RAM by sharing 
+   common parts of state between multiple objects instead of keeping in the same data in each object separately.
+2.Problem :
+   It will provide flexibility  by designing objects down to the lowest leveels of system granularity.But this can become
+   expensive in terms of performance and memory usage
+3.Structure:
+  1.This pattern is just an opptimization.Before applying this,we have to make sure that there is a RAM consumption problem
+     in the progrm due to storing large number of similar objects in  memory and there is no way to solve it.
+  2.The flyweight class contains a  portion of original object's state that it shares with many other objects.It means the
+     sameobject can be shared in different contexts.The stored state in flyweight is called intrinsic.The state passed to 
+     flyweight methods is called extrinsic.
+  3.The context class has extrinsic state.When a context is paired with one of flyweigt objects ,it represents full
+     state of original object.
+  4.The bhaviour of originl object reamain in flyweight class.So,while calling  flyweight's method we must pass appropriate
+     bits of  extrinsic state as parameters
+  5.The Client calculates or stores the extrinsic state of flyweights. From the client’s perspective, a flyweight is a
+     template object which can be configured at runtime by passing some contextual data into parameters of its methods.
+  6.The Flyweight Factory manages a pool of existing flyweights. With the factory, clients don’t create flyweights
+     directly. Instead, they call the factory, passing it bits of the intrinsic state of the desired flyweight. The factory looks
+     over previously created flyweights and either returns an existing one that matches search criteria or creates a new
+     one if nothing is found.
+4.Example:
+  The Flyweight uses sharing to support large numbers of objects efficiently. Modern web browsers use this technique to
+  prevent loading same images twice. When browser loads a web page, it traverse through all images on that page. Browser
+  loads all new images from Internet and places them the internal cache. For already loaded images, a flyweight object is
+  created, which has some unique data like position within the page, but everything else is referenced to the cached one
+5.Check list
+  1.Divide the target class's state into two separate states like shareable (intrinsic) state, and non-shareable (extrinsic) state.
+  2.Remove the non-shareable state from the class attributes, and add it the calling argument list of affected methods.
+  3.Create a Factory that can cache and reuse existing class instances.
+  4.The client must use the Factory instead of the new operator to request objects.
+  5.The client (or a third party) must look-up or compute the non-shareable state, and supply that state to class methods.
+6.Rules of thumb
+  1.Whereas Flyweight shows how to make lots of little objects, Facade shows how to make a single object represent an entire subsystem.
+  2.Flyweight is often combined with Composite to implement shared leaf nodes.
+  3.Terminal symbols within Interpreter's abstract syntax tree can be shared with Flyweight.
+  4.Flyweight explains when and how State objects can be shared.
