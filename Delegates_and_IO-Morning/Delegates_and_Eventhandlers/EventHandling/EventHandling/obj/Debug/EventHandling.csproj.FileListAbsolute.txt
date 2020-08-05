@@ -1,0 +1,7 @@
+C:\Users\santosh\source\repos\EventHandling\EventHandling\bin\Debug\EventHandling.exe.config
+C:\Users\santosh\source\repos\EventHandling\EventHandling\bin\Debug\EventHandling.exe
+C:\Users\santosh\source\repos\EventHandling\EventHandling\bin\Debug\EventHandling.pdb
+C:\Users\santosh\source\repos\EventHandling\EventHandling\obj\Debug\EventHandling.csprojAssemblyReference.cache
+C:\Users\santosh\source\repos\EventHandling\EventHandling\obj\Debug\EventHandling.csproj.CoreCompileInputs.cache
+C:\Users\santosh\source\repos\EventHandling\EventHandling\obj\Debug\EventHandling.exe
+C:\Users\santosh\source\repos\EventHandling\EventHandling\obj\Debug\EventHandling.pdb

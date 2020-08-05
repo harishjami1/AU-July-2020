@@ -1,0 +1,7 @@
+C:\Users\santosh\source\repos\MulticastDelegation\MulticastDelegation\bin\Debug\MulticastDelegation.exe.config
+C:\Users\santosh\source\repos\MulticastDelegation\MulticastDelegation\bin\Debug\MulticastDelegation.exe
+C:\Users\santosh\source\repos\MulticastDelegation\MulticastDelegation\bin\Debug\MulticastDelegation.pdb
+C:\Users\santosh\source\repos\MulticastDelegation\MulticastDelegation\obj\Debug\MulticastDelegation.csprojAssemblyReference.cache
+C:\Users\santosh\source\repos\MulticastDelegation\MulticastDelegation\obj\Debug\MulticastDelegation.csproj.CoreCompileInputs.cache
+C:\Users\santosh\source\repos\MulticastDelegation\MulticastDelegation\obj\Debug\MulticastDelegation.exe
+C:\Users\santosh\source\repos\MulticastDelegation\MulticastDelegation\obj\Debug\MulticastDelegation.pdb
